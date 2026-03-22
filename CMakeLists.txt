@@ -52,7 +52,6 @@ set_target_properties(appanotherlottie PROPERTIES
 target_include_directories(appanotherlottie
     PRIVATE
         ./src
-        # ${CMAKE_CURRENT_SOURCE_DIR}/libs/include/
 )
 
 target_link_libraries(appanotherlottie
@@ -60,7 +59,6 @@ target_link_libraries(appanotherlottie
         Qt6::Quick
         Qt6::Concurrent
         rlottie
-        # ${CMAKE_CURRENT_SOURCE_DIR}/libs/librlottie.a
 )
 
 include(GNUInstallDirs)
